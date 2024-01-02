@@ -1,41 +1,124 @@
-#title{
-    font-size: 30px;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
+.card>img {
+    width: 32px;
+}
+
+#button-addon1 {
+    width: 80px;
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+    margin-left: 80%;
+}
+
+h1 {
+    margin-left: 20px;
     margin-top: 20px;
-    margin-bottom: 20px;
-    background: linear-gradient(to right, rgb(255, 0, 234), rgb(27, 124, 227));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.nav-link {
-    display: inline-block;
-    padding: 10px 15px;
-    margin: 0 5px;
-    text-decoration: none;.nav-link {
-    display: inline-block;
-    padding: 10px 15px;
-    margin: 0 5px;
-    text-decoration: none;
-    color: #000;
-    background-color: #fff;
-    border: 1px solid transparent;
-    border-radius: 5px;
-    transition: all 0.3s ease;
 }
 
-.nav-link:focus, .nav-link:active {
-    border-color: #000;
-}
-    color: #000;
-    background-color: #fff;
-    border: 1px solid #000;
-    border-radius: 5px;
-    transition: all 0.3s ease;
+.card {
+    position: relative;
+    background-color: #fff; /* Added a background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added a subtle box shadow */
+    padding: 20px; /* Added padding */
 }
 
-.nav-link:focus, .nav-link:active {
-    background-color: #000;
+.card .form-check-input {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 20px;
+    margin: 0;
+    appearance: none;
+    cursor: pointer;
+    border-radius: 20px;
+    outline: none;
+    background-color: #ccc;
+    border: 2px solid #ccc;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.card .form-check-input:checked {
+    background-color: #4caf50;
+    border-color: #4caf50;
+}
+
+.card .form-check-input::before {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 50%;
+    left: 0px;
+    transform: translate(0, -50%);
+    background-color: white;
+    border-radius: 50%;
+    transition: left 0.3s;
+}
+
+.card .form-check-input:checked::before {
+    left: calc(100% - 22px);
+}
+
+#myImage {
+    height: 450px;
+    margin-left: 150px;
+}
+
+#myTab {
+    border-top: 1px groove rgb(255, 0, 0);
+    margin-top: 1px;
+    margin-bottom: 0px;
+}
+
+#search-input {
+    padding: 8px;
+    margin-right: 8px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #ccc; /* Added border */
+}
+
+#search-button,
+#reset-search-button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#search-button {
+    background-color: #21a73e;
     color: #fff;
+}
+
+#reset-search-button {
+    margin-left: 0.4%;
+    background-color: #f50606;
+    color: #fff;
+}
+
+#search-button:hover,
+#reset-search-button:hover {
+    opacity: 0.8;
+}
+
+.container {
+    background-color: #8f94cf;
+}
+
+body {
+    background-color: #fff;
+    margin: 0;
+}
+
+.col-6 {
+    background-color: #b4c4b1;
+}
+
+#chartContainer {
+    margin-top: 20px;
 }
