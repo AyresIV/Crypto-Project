@@ -21,7 +21,7 @@ class CryptoChart {
         this.chart = new CanvasJS.Chart("chartContainer", {
             animationEnabled: true,
             title: {
-                text: "Crypto Prices"
+                text: "Cryptocurrency Prices"
             },
             axisY: {
                 title: "Price (in USD)",
@@ -47,7 +47,7 @@ class CryptoChart {
     updateChart() {
         console.log('Fetching data...');
         if (this.selectedCoins.size === 0) {
-            console.warn('There is nothing to fetch. Clearing the chart.');
+            console.warn('No selected coins, skipping chart update.');
             this.chart.options.data = [];
             this.chart.render();
             console.log('Data fetch complete.');

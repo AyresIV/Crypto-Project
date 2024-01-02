@@ -38,7 +38,8 @@ class CryptoChart {
             data: []
         });
         this.chart.render();
-        setInterval(() => this.updateChart(), 2000); // every 20 sec
+        this.updateChart();
+        setInterval(() => this.updateChart(), 120000);
     }
     updateSelectedCoins(coins) {
         this.selectedCoins = coins;
