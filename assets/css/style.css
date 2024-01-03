@@ -63,12 +63,13 @@ h1 {
     left: calc(100% - 22px);
 }
 
-#myImage {
+#Image1 {
     height: 450px;
-    margin-left: 150px;
+    margin-left: 180px;
+    width: 400px;
 }
 
-#myTab {
+#Tab1 {
     border-top: 1px groove rgb(255, 0, 0);
     margin-top: 1px;
     margin-bottom: 0px;
@@ -107,7 +108,7 @@ h1 {
 }
 
 .container {
-    background-color: #8f94cf;
+background-color: #8f94cf;
 }
 
 body {
