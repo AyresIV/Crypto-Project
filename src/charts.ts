@@ -50,7 +50,7 @@ class CryptoChart {
 
     this.chart.render();
     this.updateChart()
-    setInterval(() => this.updateChart(), 120000);
+    setInterval(() => this.updateChart(), 130000);
   }
 
   public updateSelectedCoins(coins: Set<string>) {
