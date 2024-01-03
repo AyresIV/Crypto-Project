@@ -31,7 +31,7 @@ class CryptoChart {
     this.chart = new CanvasJS.Chart("chartContainer", {
       animationEnabled: true,
       title: {
-        text: "Cryptocurrency Prices"
+        text: "Crypto Prices"
       },
       axisY: {
         title: "Price (in USD)",
@@ -50,7 +50,7 @@ class CryptoChart {
 
     this.chart.render();
     this.updateChart()
-    setInterval(() => this.updateChart(), 130000);
+    setInterval(() => this.updateChart(), 120000);
   }
 
   public updateSelectedCoins(coins: Set<string>) {
@@ -59,13 +59,13 @@ class CryptoChart {
   }
 
   public updateChart() {
-    console.log('Fetching data...');
+    console.log('Fetching data...Please Wait');
 
     if (this.selectedCoins.size === 0) {
-      console.warn('No selected coins, skipping chart update.');
+      console.warn('No Coins are selected, Please Select Coins to Display on Chart.');
       this.chart.options.data = [];
       this.chart.render();
-      console.log('Data fetch complete.');
+      console.log('Data Has been Fetched');
       return;
     }
 
@@ -101,19 +101,19 @@ class CryptoChart {
             };
             seriesArray.push(newSeries);
           } else {
-            console.warn(`USD data not available for coin ${coin.symbol}. Skipping.`, coinData);
+            console.warn(`USD data is not available for ${coin.symbol}Coin, it will be Skipped.`, coinData);
           }
         }
 
         if (seriesArray.length === 0) {
-          console.warn('No valid data for selected coins. Clearing the chart.');
+          console.warn('No Valid data found for the selected Coins, Clearing Chart.');
           this.chart.options.data = [];
         } else {
           this.chart.options.data = seriesArray;
         }
 
         this.chart.render();
-        console.log('Data fetch complete.');
+        console.log('Data fetching is complete.');
       })
       .catch(error => console.error('Error fetching data:', error));
   }

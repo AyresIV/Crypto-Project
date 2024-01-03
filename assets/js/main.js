@@ -97,7 +97,7 @@ function removeCoinFromLiveReports(coinId) {
         }
         cryptoChart.stopChartForCoin(coinId);
         selectedCoins.delete(coinId);
-        console.log(`The Coin "${coinId}" has been removed from The live reports, and chart updates have been stopped.`);
+        console.log(`The "${coinId}" Coin was removed from The live reports, and the chart updates will be stopped.`);
     }
 }
 function handleSwitchCoins(newCoinId) {
@@ -106,7 +106,7 @@ function handleSwitchCoins(newCoinId) {
         const coinToRemove = yield promptForCoinToRemove(currentSelectedCoins);
         if (coinToRemove) {
             selectedCoins.delete(coinToRemove);
-            console.log(`The Coin "${coinToRemove}" has been removed from The live reports, and chart updates have been stopped.`);
+            console.log(`The "${coinToRemove}" Coin was removed from The live reports, and the chart updates will be stopped.`);
             selectedCoins.add(newCoinId);
             console.log(`The Coin "${coinToRemove}" has been replaced with "${newCoinId}"`);
             updateUIAndCharts(coinToRemove, newCoinId);

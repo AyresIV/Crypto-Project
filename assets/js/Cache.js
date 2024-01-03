@@ -15,7 +15,7 @@ export default class Cache {
     }
     constructor() {
         this.data = [];
-        this.timeout = 1000 * 120;
+        this.timeout = 1000 * 20;
     }
     getData(key) {
         return __awaiter(this, void 0, void 0, function* () {

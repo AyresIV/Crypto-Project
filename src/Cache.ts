@@ -5,7 +5,7 @@ export default class Cache {
         when: Date;
     }[] = [];
 
-    timeout: number = 1000 * 120;
+    timeout: number = 1000 * 20;
     static instance: Cache;
     public static getInstance(): Cache {
         if (!this.instance) this.instance = new Cache();
