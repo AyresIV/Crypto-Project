@@ -8,9 +8,9 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 import reduceCoins from './reducers/coins.js';
-import Cache from './Cache.js';
 import { setupEventListeners } from './event-Listener/eventListener.js';
 import { CryptoChart } from './chart.js';
+import Cache from './Cache.js';
 const cache = Cache.getInstance();
 const selectedCoins = new Set();
 const cryptoChart = new CryptoChart();

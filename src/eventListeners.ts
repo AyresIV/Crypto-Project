@@ -1,7 +1,9 @@
 import Coin from '../assets/js/interfaces/coin.js';
-import reduceCoins from '../assets/js/reducers/coins.js';
 import { getCoins, coinsContainerClicked, addCoinToLiveReports, removeCoinFromLiveReports, addedCoins } from '../assets/js/main.js';
 import { CryptoChart } from '../assets/js/chart.js';
+import reduceCoins from '../assets/js/reducers/coins.js';
+
+
 
 const cryptoChart = new CryptoChart();
 

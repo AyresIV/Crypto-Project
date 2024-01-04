@@ -1,9 +1,10 @@
 import CoinData from './interfaces/coin-data.js';
-import Coin from './interfaces/coin.js';
 import reduceCoins from './reducers/coins.js';
-import Cache from './Cache.js';
 import { setupEventListeners } from './event-Listener/eventListener.js';
+import Coin from './interfaces/coin.js';
 import { CryptoChart } from './chart.js';
+import Cache from './Cache.js';
+
 
 const cache = Cache.getInstance();
 const selectedCoins = new Set<string>();

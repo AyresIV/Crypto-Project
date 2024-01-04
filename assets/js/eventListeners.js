@@ -7,9 +7,9 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-import reduceCoins from '../assets/js/reducers/coins.js';
 import { getCoins, coinsContainerClicked, addCoinToLiveReports, removeCoinFromLiveReports, addedCoins } from '../assets/js/main.js';
 import { CryptoChart } from '../assets/js/chart.js';
+import reduceCoins from '../assets/js/reducers/coins.js';
 const cryptoChart = new CryptoChart();
 export function setupEventListeners(selectedCoins) {
     const coinsContainer = document.getElementById('coins-container');
